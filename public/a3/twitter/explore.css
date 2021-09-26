@@ -7,7 +7,8 @@ body{
     border-radius: 20px;
     width: 85%;
     height: 5%;
-
+    color: white;
+    size: 20px;
 }
 ::placeholder{
     color: white;
@@ -20,7 +21,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: darkgray;
+    background-color: black;
   }
   
 li {
@@ -36,25 +37,25 @@ padding: 16px;
 text-decoration: none;
 }
 
-.underline-active-link {
+.wd-underline-active-link {
 height: 3px;
 background-color: rgb(29,161,242);
 }
 
-.active-link{
+.wd-active-link{
     color: rgb(29,161,242) !important;
 }
 
-.trending-posts{
+.wd-trending-posts{
     display: block;
 }
 
-.topic, .wd-suggested-post-topic{
+.wd-topic, .wd-suggested-post-topic{
     color: rgb(110,118,125);
     font-size: 13px;
 }
 
-.post{
+.wd-post{
     padding: 16px;
     color: white;
 }
@@ -85,4 +86,19 @@ padding: 16px;
     height: 12px;
     width: 12px;
     border-radius: 20px;
+}
+
+.fa-check-circle, .fa-cog{
+    color: blue;
+}
+
+.wd-explore-title{
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+.wd-explore-settings{
+    float: right;
+    margin: 8px 12px 0px 0px;
 }
