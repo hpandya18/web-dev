@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+}
+.wd-search{
+    background-color: darkgray;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 20px;
+    width: 85%;
+    height: 5%;
+
+}
+::placeholder{
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgray;
+  }
+  
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: rgb(110,118,125);
+text-align: center;
+font-size: 15px;
+padding: 16px;
+text-decoration: none;
+}
+
+.underline-active-link {
+height: 3px;
+background-color: rgb(29,161,242);
+}
+
+.active-link{
+    color: rgb(29,161,242) !important;
+}
+
+.trending-posts{
+    display: block;
+}
+
+.topic, .wd-suggested-post-topic{
+    color: rgb(110,118,125);
+    font-size: 13px;
+}
+
+.post{
+    padding: 16px;
+    color: white;
+}
+
+/* .wd-post-details{
+    display: flex;
+} */
+
+
+.wd-post-image{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
+
+.wd-suggested-post-author{
+    color: white;
+}
+
+.wd-suggested-post{
+display: flex;
+justify-content: space-between;
+padding: 16px;
+}
+
+.wd-title-logo{
+    height: 12px;
+    width: 12px;
+    border-radius: 20px;
+}

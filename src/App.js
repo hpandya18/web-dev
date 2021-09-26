@@ -26,6 +26,12 @@ function App() {
           <li>
             <a href="./a2/practise/iframe/index.html">IFrame practise</a>
           </li>
+          <li>
+            <a href="/a3/practise/css/index.html">CSS practise</a>
+          </li>
+          <li>
+            <a href="/a3/challenge/index.html">CSS Challenge</a>
+          </li>
         </ul>
       </header>
     </div>
