@@ -10,6 +10,14 @@
     background-color: red;
     color: white;
 }
+
+.rotate-list-counter-clockwise{
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: green;
+    color: white;
+}
+
 .rotate-list-items li {
     width: 100px;
     text-align: right;
@@ -29,6 +37,10 @@
 }
 
 .rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-image-custom {
     transform: rotate(-10deg);
 }
 
@@ -57,8 +69,20 @@
     height: 200px;
 }
 
+.gradients-linear-custom {
+    background: linear-gradient(gray, blue);
+    width: 200px;
+    height: 200px;
+}
+
 .gradients-radial {
     background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial-custom {
+    background: radial-gradient(white, gray);
     width: 200px;
     height: 200px;
 }
@@ -66,6 +90,14 @@
 .gradients-positioned {
     background:
         radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned-custom{
+    background:
+        radial-gradient(at top right, green, pink);
     width: 200px;
     height: 200px;
     color: white;
@@ -80,6 +112,55 @@
     height: 200px;
     background-color: red;
     color: white;
+}
+
+.animation-keyframes-custom {
+    position: relative;
+    top: 0px;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 2;
+    animation-name: slideout;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    color: white;
+}
+
+@keyframes slideout {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 75%;
+        margin-left: 100%;
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        color: blue;
+    }
+
+
+    50% {
+        position: relative;
+        top: 200px;
+        font-size: 80%;
+        margin-left: 25%;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(128, 128, 131);
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        color: white;
+    }
 }
 
 @keyframes slidein {
@@ -123,10 +204,21 @@
     border-color: black;
     border-style: solid;
 }
+
+.flex-container-custom {
+    border-width: 2px;
+    border-color: gray;
+    border-style: dotted;
+}
 .flex-box {
     border: 5px gray solid;
     margin: 10px;
     padding: 10px;
+}
+.flex-box-custom {
+    border: 2px green dashed;
+    margin: 20px;
+    padding: 20px;
 }
 .flex-box-1 {
     background-color: yellow;
@@ -140,6 +232,18 @@
     color: white;
 }
 
+.flex-box-1-custom {
+    background-color: pink;
+}
+.flex-box-2-custom {
+    background-color: coral;
+    color: white;
+}
+.flex-box-3-custom {
+    background-color: rgb(10, 149, 230);
+    color: rgb(12, 3, 3);
+}
+
 .flex-container-horizontal {
     border-width: 5px;
     border-color: black;
@@ -147,10 +251,18 @@
     display: flex;
 }
 
+.flex-container-horizontal-custom {
+    border-width: 10px;
+    border-color: green;
+    border-style: dashed;
+    display: flex;
+}
+
 .flex-container-horizontal-justify-center{
     display: flex;
     justify-content: center;
 }
+
 
 .flex-container-horizontal-justify-end{
     display: flex;
@@ -176,9 +288,13 @@
     flex-basis: 100%;
 }
 
+.flex-container-stretch > .flex-box-custom {
+    flex-basis: 100%;
+}
 
 
-@media screen and (min-width: 0px) and (max-width: 300px) {
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
     body {
         background-color: yellow;
     }
@@ -195,7 +311,7 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
     body {
         background-color: blue;
         color: white;
@@ -213,7 +329,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
     body {
         background-color: red;
         color: white;
