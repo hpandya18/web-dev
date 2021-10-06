@@ -32,6 +32,12 @@ function App() {
           <li>
             <a href="/a3/challenge/index.html">CSS Challenge</a>
           </li>
+          <li>
+            <a href="./a4/practise/bootstrap/index.html">Bootstrap Practise</a>
+          </li>
+          <li>
+            <a href="./a4/twitter/explore/explore.html">Twitter Bootstrap</a>
+          </li>
         </ul>
       </header>
     </div>
