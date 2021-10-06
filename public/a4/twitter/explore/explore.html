@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="row">
-      <div class="col-2">
+      <div class="col-2 col-xxl-2 col-xl-2 col-l-2 col-md-2">
         <div class="list-group">
           <a
             href="https://en.wikipedia.org/wiki/Dune_(novel)"
@@ -31,52 +31,60 @@
             class="list-group-item list-group-item-action"
             aria-current="true"
             ><i class="fas fa-home"></i>
-            Home
+            <span class="list-group-item-text">Home</span>
           </a>
           <a
             href="https://en.wikipedia.org/wiki/Dune_(novel)"
             class="list-group-item list-group-item-action active"
             aria-current="true"
-            ><i class="fas fa-hashtag"></i>
-            Explore
+            ><i class="far fa-hashtag active"></i>
+            <span class="list-group-item-text">Explore</span>
           </a>
           <a
             href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
             class="list-group-item list-group-item-action"
           >
-            <i class="fas fa-bell"></i>
-            Notifications</a
+            <i class="far fa-bell"></i>
+            <span class="list-group-item-text">Notifications</span></a
           >
           <a
             href="https://en.wikipedia.org/wiki/The_Forever_War"
             class="list-group-item list-group-item-action"
-            ><i class="fas fa-envelope"></i> Messages</a
+            ><i class="far fa-envelope"></i>
+            <span class="list-group-item-text">Messages</span></a
           >
           <a
             href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
             class="list-group-item list-group-item-action"
-            ><i class="fas fa-bookmark"></i> Bookmarks</a
+            ><i class="far fa-bookmark"></i>
+            <span class="list-group-item-text">Bookmarks</span></a
           >
 
           <a
             href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
             class="list-group-item list-group-item-action"
-            ><i class="fas fa-list"></i> List</a
+            ><i class="fas fa-list"></i>
+            <span class="list-group-item-text">List</span></a
           >
           <a
             href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
             class="list-group-item list-group-item-action"
-            ><i class="fas fa-user-alt"></i> Profile</a
+            ><i class="far fa-user"></i>
+            <span class="list-group-item-text">Profile</span></a
           >
           <a
             href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
             class="list-group-item list-group-item-action"
-            ><i class="fas fa-minus-circle"></i> More</a
+            ><i class="fas fa-minus-circle"></i>
+            <span class="list-group-item-text">More</span></a
           >
         </div>
-        <button type="button" class="btn btn-primary w-100 mt-2">Tweet</button>
+        <div class="d-grid gap-2 mt-2">
+          <button class="btn btn-primary" type="button">Tweet</button>
+        </div>
+        <!-- <button type="button" class="btn btn-primary w-100 mt-2">Tweet</button> -->
       </div>
-      <div class="col-7">
+      <div class="col-7 col-xxl-7 col-xl-7 col-l-7 col-md-6">
         <form>
           <div class="row">
             <div class="search-bar mb-2">
@@ -85,7 +93,7 @@
                   type="text"
                   class="form-control"
                   id="search"
-                  placeholder="Search Twitter"
+                  placeholder="&#128269;  Search Twitter"
                 />
               </div>
               <div>
@@ -94,19 +102,21 @@
             </div>
             <ul class="nav nav-tabs">
               <li class="nav-item">
-                <a class="nav-link active" href="#">For you</a>
+                <a class="nav-link active" href="../for-you.html">For you</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Trending</a>
+                <a class="nav-link" href="../trending.html">Trending</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="../news.html">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sports</a>
+                <a class="nav-link" href="../sports.html">Sports</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Entertainment</a>
+                <a class="nav-link" href="../entertainment.html"
+                  >Entertainment</a
+                >
               </li>
             </ul>
 
@@ -197,7 +207,7 @@
           </div>
         </form>
       </div>
-      <div class="col-3">
+      <div class="col-3 col-xxl-3 col-xl-3 col-l-3 col-md-4 who-to-follow-list">
         <div class="card">
           <div class="follow-card-body">
             <p class="follow-card-details">Who to follow</p>
@@ -214,7 +224,7 @@
               />
               <div>
                 <div class="card-text">Java</div>
-                <div>@Java</div>
+                <div class="handle">@Java</div>
               </div>
               <i class="fa fa-check-circle"></i>
             </div>
@@ -236,7 +246,7 @@
               />
               <div>
                 <div class="card-text">Relativity space</div>
-                <div>@relativityspace</div>
+                <div class="handle">@relativityspace</div>
               </div>
               <i class="fa fa-check-circle"></i>
             </div>
@@ -259,7 +269,7 @@
               />
               <div>
                 <div class="card-text">Virgin Galactic</div>
-                <div>@virgingalactic</div>
+                <div class="handle">@virgingalactic</div>
               </div>
               <i class="fa fa-check-circle"></i>
             </div>
@@ -281,7 +291,7 @@
               />
               <div>
                 <div class="card-text">NASA</div>
-                <div>@NASA</div>
+                <div class="handle">@NASA</div>
               </div>
               <i class="fa fa-check-circle"></i>
             </div>
@@ -303,7 +313,7 @@
               />
               <div>
                 <div class="card-text">Tesla</div>
-                <div>@Tesla</div>
+                <div class="handle">@Tesla</div>
               </div>
               <i class="fa fa-check-circle"></i>
             </div>

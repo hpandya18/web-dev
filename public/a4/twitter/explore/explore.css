@@ -1,5 +1,28 @@
 body {
  margin: 1rem;
+ background-color: black;
+}
+
+.list-group-item{
+background-color: rgb(19, 16, 16);
+color: white;
+font-weight: lighter;
+}
+
+i.active{
+    font-weight: bold;
+}
+
+.list-group-item.active{
+    background-color: rgb(19, 16, 16);
+    color: white;
+    font-weight: bold;
+    }
+
+
+.card{
+    color: white;
+    background-color: rgb(19, 16, 16);
 }
 
 .card-body{
@@ -55,6 +78,9 @@ body {
 #search{
     border-radius: 30px;
     width: 80%;
+    background-color: rgb(19, 16, 16);
+    border: none;
+    color: white;
 }
 
 .search-bar{
@@ -117,4 +143,68 @@ body {
     font-size: 2rem !important;
     top: 22rem;
     left: 0.5rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .list-group-item-text{
+        display: none;
+    }
+    .who-to-follow-list{
+        display: none;
+    }
+}
+
+
+/* medium and small screens */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .list-group-item-text{
+        display: none;
+    }
+    .who-to-follow-list{
+        display: none;
+    }
+}
+
+
+
+/* large screens */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .list-group-item-text{
+        display: none;
+    }
+}
+
+.fa-cog{
+    color: #0d6efd;
+}
+
+.handle, .nav-link{
+color: gray;
+}
+
+
+.nav-tabs{
+    border: 0px solid transparent;
+}
+
+.nav-tabs .nav-link{
+    color: gray !important;
+    border: none;
+    border: 0px solid !important;
+}
+
+.nav-link.active{
+    color: white !important;
+    background-color: black !important;
+    border-bottom: 4px solid #0d6efd !important;
+}
+
+
+/* .nav-link:hover, ::before, ::after{
+    color: gray !important;
+    border: none;
+} */
+
+::placeholder{
+    margin-left: 1rem;
 }
