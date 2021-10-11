@@ -38,6 +38,9 @@ function App() {
           <li>
             <a href="./a4/twitter/explore/explore.html">Twitter Bootstrap</a>
           </li>
+          <li>
+            <a href="./a5/practise/js/index.html">JS practice</a>
+          </li>
         </ul>
       </header>
     </div>
