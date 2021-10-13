@@ -41,6 +41,14 @@ function App() {
           <li>
             <a href="./a5/practise/js/index.html">JS practice</a>
           </li>
+          <li>
+            <a href="./a5/todos/index.html">TODO list</a>
+          </li>
+          <li>
+            <a href="./a5/build/ExploreScreen/index.html">
+              Explore Screen by using Components.
+            </a>
+          </li>
         </ul>
       </header>
     </div>
