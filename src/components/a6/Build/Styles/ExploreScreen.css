@@ -11,10 +11,11 @@ body {
    
    i.active{
        font-weight: bold;
+       color: white;
    }
    
    .list-group-item.active{
-        background-color: #2a9fd6;
+       background-color: #2a9fd6;
        color: white;
        font-weight: bold;
        }
@@ -208,7 +209,11 @@ body {
        margin-left: 1rem;
    }
 
+   .far, .fas, .fa{
+        width: 1.5rem;
+   }
+
    .search-row{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+   }

@@ -2,7 +2,7 @@ import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
 
 const ExploreComponent = () => {
   return `
-            <div class="row">
+            <div class="row search-row">
                 <!-- search field and cog -->
                 <div class="search-bar p-0 mb-2">
                   <div class="input-box">
