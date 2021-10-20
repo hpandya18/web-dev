@@ -16,7 +16,7 @@ const PostSummaryItem = ({
         <div className="card-title-name">
           <span className="card-topic-name">{post.userName}</span>
           <i className="fa fa-check-circle mt-1"></i>
-          <span className="dot-className">&#x2022;</span>
+          <span className="dot-class">&#x2022;</span>
           {post.time}
         </div>
         <div className="post-card-body">

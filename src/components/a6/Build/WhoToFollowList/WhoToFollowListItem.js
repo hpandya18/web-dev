@@ -1,7 +1,7 @@
 import React from "react";
 const WhoToFollowListItem = ({
   who = {
-    avatarIcon: "../../../images/nasa.png",
+    avatarIcon: "../../../../assets/nasa.png",
     userName: "NASA",
     handle: "NASA",
   },
@@ -11,15 +11,10 @@ const WhoToFollowListItem = ({
       <div className="card">
         <div className="card-body">
           <div className="card-details">
-            <img
-              className="follow-logo"
-              src={who.avatarIcon}
-              alt="logo"
-              srcSet=""
-            />
+            <img className="follow-logo" src={who.avatorIcon} alt="logo" />
             <div>
               <div className="card-text">{who.userName}</div>
-              <div className="handle">{who.handle}</div>
+              <div className="handle">@{who.handle}</div>
             </div>
             <i className="fa fa-check-circle mt-1"></i>
           </div>

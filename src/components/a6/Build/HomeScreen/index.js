@@ -1,6 +1,6 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar/";
-import PostSummaryList from "../PostSummaryList/";
+import NavigationSidebar from "../NavigationSidebar";
+import PostSummaryList from "../PostSummaryList";
 import HomeComponent from "./HomeComponent";
 import "../Styles/HomeScreen.css";
 

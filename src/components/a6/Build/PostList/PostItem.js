@@ -9,7 +9,7 @@ const PostItem = ({
     topic: "Countdown: Inspiration4 Mission to Space. | Netflix official site.",
     details:
       "From training to launch to landing, this all access docuseries rides with with the inspiration4 crewon the first all civilian orbital space.",
-    image: "../assets/musk.png",
+    image: "../../../../assets/musk.png",
     comments: "23K",
     retweets: "50K",
     likes: "200K",
@@ -30,11 +30,17 @@ const PostItem = ({
             <span className="home-option">
               <i className="fas fa-ellipsis-h"></i>
             </span>
-            <div className="home-post-details">{post.title}</div>
+            <div
+              className="home-post-details"
+              dangerouslySetInnerHTML={{ __html: post.title }}
+            ></div>
             <div className="card home-card">
               <img src={post.cardImage} className="home-card-image" alt="..." />
               <div className="home-card-body">
-                <h5 className="home-card-title">{post.topic}</h5>
+                <h5
+                  className="home-card-title"
+                  dangerouslySetInnerHTML={{ __html: post.topic }}
+                ></h5>
                 <p className="home-card-text">{post.details}</p>
               </div>
             </div>
