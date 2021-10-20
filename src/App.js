@@ -14,10 +14,10 @@ function App() {
         <Route path="/a6/hello" exact={true}>
           <HelloWorld />
         </Route>
-        <Route path={["/", "/a6", "/a6/practice"]}>
+        <Route path="/a6/practice">
           <Practice />
         </Route>
-        <Route path="/a6/build" exact={true}>
+        <Route path={["/", "/a6", "/a6/build"]} exact={true}>
           <Build />
         </Route>
         <Route path="/a6/twitter/home" component={HomeScreen} />
