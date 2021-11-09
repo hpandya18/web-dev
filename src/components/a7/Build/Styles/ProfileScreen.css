@@ -1,5 +1,5 @@
 .cover-image{
-    height: 20rem;
+    height: 40rem;
     width: 100%;
 }
 
@@ -76,4 +76,9 @@ color: gray;
     cursor: pointer;
     border-radius: 11rem;
     border-color: gray;
+}
+
+
+.back-button {
+    margin-top: auto;
 }

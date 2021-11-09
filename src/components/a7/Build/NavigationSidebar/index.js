@@ -37,7 +37,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         <Link
           to="/a7/twitter/messages"
           className={`list-group-item list-group-item-action ${
-            active === "explore" ? "messages" : ""
+            active === "messages" ? "active" : ""
           }`}
         >
           <i className="far fa-envelope"></i>
@@ -56,7 +56,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         <Link
           to="/a7/twitter/list"
           className={`list-group-item list-group-item-action ${
-            active === "explore" ? "list" : ""
+            active === "list" ? "active" : ""
           }`}
         >
           <i className="fas fa-list"></i>
@@ -65,7 +65,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         <Link
           to="/a7/twitter/profile"
           className={`list-group-item list-group-item-action ${
-            active === "explore" ? "profile" : ""
+            active === "profile" ? "active" : ""
           }`}
         >
           <i className="far fa-user"></i>
@@ -74,7 +74,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         <Link
           to="/a7/twitter/more"
           className={`list-group-item list-group-item-action ${
-            active === "explore" ? "more" : ""
+            active === "more" ? "more" : ""
           }`}
         >
           <i className="fas fa-minus-circle"></i>

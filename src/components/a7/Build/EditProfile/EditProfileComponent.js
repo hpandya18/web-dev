@@ -29,16 +29,16 @@ const EditProfileComponent = () => {
       <form onSubmit={onSubmit}>
         <div>
           <div className="edit-profile-title-div">
-            <div className="back-button">
+            <div className="cancel-button">
               <Link to="/a7/twitter/profile">
                 <i className="fas fa-times"></i>
               </Link>
             </div>
             <div className="edit-profile-text">Edit Profile</div>
             <div className="save-button">
-              <button className="btn btn-save" type="submit">
+              <Link className="btn btn-save" to="/a7/twitter/profile">
                 Save
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const EditProfileComponent = () => {
           <img src={profile.coverImage} className="cover-image" />
         </div>
         <div>
-          <img src={profile.profileImage} className="profile-image" />
+          <img src={profile.profileImage} className="edit-profile-image" />
         </div>
         <div className="update-details">
           <ul className="list-group">

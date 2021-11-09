@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HelloWorld = () => {
+const HelloWorldA6 = () => {
   return (
     <>
       <Link to="/a6/twitter/home">Build</Link>
@@ -11,4 +11,4 @@ const HelloWorld = () => {
   );
 };
 
-export default HelloWorld;
+export default HelloWorldA6;
