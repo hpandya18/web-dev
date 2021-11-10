@@ -12,12 +12,12 @@ const EditProfileComponent = () => {
   const onChangeHandler = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    console.log(name);
+    console.log("on change", name, value);
     setInputs((values) => ({ ...values, [name]: value }));
   };
 
-  const onSubmit = (event) => {
-    event.preventDefault();
+  const onSubmit = () => {
+    console.log("before dispatching", inputs);
     dispatch({
       type: "update-profile",
       profile: inputs,
@@ -26,7 +26,7 @@ const EditProfileComponent = () => {
 
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <form>
         <div>
           <div className="edit-profile-title-div">
             <div className="cancel-button">
@@ -36,7 +36,11 @@ const EditProfileComponent = () => {
             </div>
             <div className="edit-profile-text">Edit Profile</div>
             <div className="save-button">
-              <Link className="btn btn-save" to="/a7/twitter/profile">
+              <Link
+                className="btn btn-save"
+                to="/a7/twitter/profile"
+                onClick={onSubmit}
+              >
                 Save
               </Link>
             </div>

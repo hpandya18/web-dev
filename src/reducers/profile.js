@@ -7,6 +7,7 @@ const initialState = {
 const profile = (state = initialState, action) => {
   switch (action.type) {
     case "update-profile":
+      console.log(action.profile);
       const newProfile = {};
       if (action.profile.name) {
         newProfile["firstName"] = action.profile["name"].split(" ")[0];
@@ -16,7 +17,7 @@ const profile = (state = initialState, action) => {
         profile: {
           ...state.profile,
           ...action.profile,
-          newProfile,
+          ...newProfile,
         },
       };
 
