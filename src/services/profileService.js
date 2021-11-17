@@ -1,4 +1,4 @@
-const PROFILE_API = "http://localhost:4000/api/profile";
+const PROFILE_API = "https://twitter-clone-hp.herokuapp.com/api/profile";
 
 export const updateProfile = (dispatch, profile) => {
   console.log("BEFORE SENDING", profile);
