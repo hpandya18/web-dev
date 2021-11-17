@@ -6,6 +6,12 @@ const initialState = {
 
 const profile = (state = initialState, action) => {
   switch (action.type) {
+    case "fetch-profile":
+      return {
+        profile: {
+          ...action.profile,
+        },
+      };
     case "update-profile":
       console.log(action.profile);
       const newProfile = {};

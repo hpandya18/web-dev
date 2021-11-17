@@ -1,12 +1,14 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { getCurrentProfile } from "../../../../services/profileService";
 
 const selectProfile = (state) => state.profile.profile;
 
 const ProfileComponent = () => {
   const profile = useSelector(selectProfile);
-  console.log(profile);
+  const dispatch = useDispatch();
+  useEffect(() => getCurrentProfile(dispatch, {}));
   // const dispatch = useDispatch();
   // const updateProfileClickHandler = () => {
   //   dispatch({ type: "update-profile", profile });
@@ -38,7 +40,7 @@ const ProfileComponent = () => {
           alt="Profile Image"
         />
         <div className="edit-profile-button">
-          <Link to="/a7/twitter/edit-profile">
+          <Link to="/a8/twitter/edit-profile">
             <button className="btn btn-dark">Edit Profile</button>
           </Link>
         </div>

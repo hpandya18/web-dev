@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { updateProfile } from "../../../../services/profileService";
 
 const selectProfile = (state) => state.profile.profile;
 
@@ -12,16 +13,18 @@ const EditProfileComponent = () => {
   const onChangeHandler = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    console.log("on change", name, value);
     setInputs((values) => ({ ...values, [name]: value }));
   };
 
   const onSubmit = () => {
-    console.log("before dispatching", inputs);
-    dispatch({
-      type: "update-profile",
-      profile: inputs,
-    });
+    let names = {};
+    if (inputs.name) {
+      const firstName = inputs["name"].split(" ")[0];
+      const lastName = inputs["name"].split(" ")[1];
+      names = { firstName, lastName };
+    }
+    const newProfile = { ...profile, ...inputs, ...names };
+    updateProfile(dispatch, newProfile);
   };
 
   return (
@@ -30,7 +33,7 @@ const EditProfileComponent = () => {
         <div>
           <div className="edit-profile-title-div">
             <div className="cancel-button">
-              <Link to="/a7/twitter/profile">
+              <Link to="/a8s/twitter/profile">
                 <i className="fas fa-times"></i>
               </Link>
             </div>
@@ -38,7 +41,7 @@ const EditProfileComponent = () => {
             <div className="save-button">
               <Link
                 className="btn btn-save"
-                to="/a7/twitter/profile"
+                to="/a8/twitter/profile"
                 onClick={onSubmit}
               >
                 Save
