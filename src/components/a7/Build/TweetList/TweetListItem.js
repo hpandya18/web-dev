@@ -17,6 +17,7 @@ const TweetListItem = ({ tweet }) => {
               <img
                 className="rounded-circle wd-avatar-image"
                 src={tweet["logo-image"]}
+                alt="Image"
               />
             </td>
             <td className="ps-3" style={{ width: "100%" }}>
@@ -33,6 +34,7 @@ const TweetListItem = ({ tweet }) => {
                   src={tweet.attachments.image}
                   className="mt-2 wd-border-radius-20px"
                   style={{ width: "100%" }}
+                  alt="Image"
                 />
               )}
               {tweet.attachments && tweet.attachments.video && (

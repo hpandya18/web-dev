@@ -23,6 +23,7 @@ const WhatsHappening = () => {
                 src={"/assets/musk.png"}
                 className="rounded-circle"
                 style={{ width: "48px", margin: "16px" }}
+                alt="Image"
               />
             </td>
             <td style={{ width: "100%" }}>

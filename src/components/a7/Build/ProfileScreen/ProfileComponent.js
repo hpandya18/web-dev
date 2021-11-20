@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -25,10 +25,18 @@ const ProfileComponent = () => {
         <div className="tweet-count">{profile.stats.tweets} Tweets</div>
       </div>
       <div>
-        <img src={profile.coverImage} className="cover-image" />
+        <img
+          src={profile.coverImage}
+          className="cover-image"
+          alt="Cover Image"
+        />
       </div>
       <div>
-        <img src={profile.profileImage} className="profile-image" />
+        <img
+          src={profile.profileImage}
+          className="profile-image"
+          alt="Profile Image"
+        />
         <div className="edit-profile-button">
           <Link to="/a7/twitter/edit-profile">
             <button className="btn btn-dark">Edit Profile</button>

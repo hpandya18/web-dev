@@ -1,0 +1,107 @@
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .list-group-item-text{
+        display: none;
+    }
+    .post-summary-list{
+        display: none;
+    }
+}
+
+
+/* medium and small screens */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .list-group-item-text{
+        display: none;
+    }
+    .post-summary-list{
+        display: none;
+    }
+}
+
+
+
+
+
+.home-card{
+    background-color: black !important;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+    border-radius: 1rem !important;
+    border: 1px solid gray(199, 195, 195) !important;
+}
+
+.home-post {
+    height: 100%;
+    color: white;
+    border: 1px solid gray;
+    padding: 1rem;
+    margin-bottom: 2;
+}
+
+.home-owner-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+
+.home-post-title{
+    display: flex;
+}
+
+.home-author-details{
+    margin: 12px 0px 0px 12px;
+
+}
+
+.home-author-name{
+
+    size: 15px;
+    color: white;
+}
+
+.home-author-handle{
+    color: gray;
+}
+
+.home-card-image{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: 1px solid gray;
+    margin-top: 0.5rem;
+}
+
+.home-card-body{
+    border: 1px solid gray;
+    padding: 1rem;
+        border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.home-card-text{
+    color: gray;
+}
+
+.home-option{
+    float: right;
+}
+
+.fas, .fa{
+    color: gray;
+}
+
+.home-card-title{
+    font-size: 1rem;
+}
+
+.home-post-icons{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.link{
+    color: rgb(86, 86, 189);
+}

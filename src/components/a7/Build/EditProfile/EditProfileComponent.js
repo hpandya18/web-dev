@@ -47,10 +47,18 @@ const EditProfileComponent = () => {
           </div>
         </div>
         <div>
-          <img src={profile.coverImage} className="cover-image" />
+          <img
+            src={profile.coverImage}
+            className="cover-image"
+            alt="Cover Image"
+          />
         </div>
         <div>
-          <img src={profile.profileImage} className="edit-profile-image" />
+          <img
+            src={profile.profileImage}
+            className="edit-profile-image"
+            alt="Profile Image"
+          />
         </div>
         <div className="update-details">
           <ul className="list-group">
