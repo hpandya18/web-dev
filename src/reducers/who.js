@@ -1,11 +1,16 @@
-import whoJson from './data/who.json';
+import whoJson from "./data/who.json";
 
 const initialState = {
-    who: whoJson
-}
+  who: whoJson,
+};
 
-const who = (state = initialState) => {
-    return(state);
+const who = (state = initialState, action) => {
+  switch (action.type) {
+    case "fetch-all-whos":
+      return { who: action.whos };
+    default:
+      return state;
+  }
 };
 
 export default who;

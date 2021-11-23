@@ -1,8 +1,11 @@
-const TWEET_API = "https://twitter-clone-hp.herokuapp.com/api/tweets";
+const TWEET_API = "http://localhost:4000/api/tweets";
+// const TWEET_API = "https://twitter-clone-hp.herokuapp.com/api/tweets";
 
 export const fetchAllTweets = (dispatch) =>
   fetch(TWEET_API)
-    .then((response) => response.json())
+    .then((response) => {
+      return response.json();
+    })
     .then((tweets) =>
       dispatch({
         type: "fetch-all-tweets",
