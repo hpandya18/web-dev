@@ -11,6 +11,9 @@ import { default as Build6 } from "./components/a6/Build";
 import { default as Practice8 } from "./components/a8/Practice";
 import { default as Build8 } from "./components/a8/Build";
 
+import { default as Practice9 } from "./components/a9/Practice";
+import { default as Build9 } from "./components/a9/Build";
+
 import HelloWorldA6 from "./components/a6/HelloWorld";
 
 function App() {
@@ -35,8 +38,14 @@ function App() {
         <Route path="/a8/practice">
           <Practice8 />
         </Route>
-        <Route path={["/", "a8/", "/a8/twitter"]}>
+        <Route path="/a8/twitter">
           <Build8 />
+        </Route>
+        <Route path="/a9/practice">
+          <Practice9 />
+        </Route>
+        <Route path={["/", "a9/", "/a9/twitter"]}>
+          <Build9 />
         </Route>
       </div>
     </BrowserRouter>
