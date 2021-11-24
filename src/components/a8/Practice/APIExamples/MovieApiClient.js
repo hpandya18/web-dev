@@ -8,7 +8,7 @@ const MovieApiClient = () => {
   });
 
   const saveMovie = () => {
-    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+    fetch(`https://twitter-clone-hp.herokuapp.com/api/movies/${movie._id}`, {
       method: "PUT",
       body: JSON.stringify(movie),
       headers: {
@@ -24,7 +24,7 @@ const MovieApiClient = () => {
   };
   const createMovieClickHandler = () => {
     const newMovie = { ...movie, _id: movies.length + 1 };
-    fetch("http://localhost:4000/api/movies", {
+    fetch("https://twitter-clone-hp.herokuapp.com/api/movies", {
       method: "POST",
       body: JSON.stringify(newMovie),
       headers: {
@@ -36,14 +36,14 @@ const MovieApiClient = () => {
   };
 
   const deleteMovie = (movie) =>
-    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+    fetch(`https://twitter-clone-hp.herokuapp.com/api/movies/${movie._id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
       .then((movies) => setMovies(movies));
   useEffect(
     () =>
-      fetch("http://localhost:4000/api/movies")
+      fetch("https://twitter-clone-hp.herokuapp.com/api/movies")
         .then((response) => response.json())
         .then((movies) => setMovies(movies)),
     []
