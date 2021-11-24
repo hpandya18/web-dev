@@ -8,7 +8,6 @@ const MovieApiClient = () => {
   });
 
   const saveMovie = () => {
-    console.log(movie);
     fetch(`http://localhost:4000/api/movies/${movie._id}`, {
       method: "PUT",
       body: JSON.stringify(movie),
@@ -24,8 +23,9 @@ const MovieApiClient = () => {
     setMovie({ ...movie, title: event.target.value });
   };
   const createMovieClickHandler = () => {
-    const newMovie = { ...movie, _id: movies.length + 1 };
-    fetch("http://localhost:4000/api/movies", {
+    console.log("create");
+    const newMovie = { ...movie };
+    fetch("http://localhost:4000/rest/movies", {
       method: "POST",
       body: JSON.stringify(newMovie),
       headers: {
@@ -33,18 +33,20 @@ const MovieApiClient = () => {
       },
     })
       .then((response) => response.json())
-      .then((movies) => setMovies(movies));
+      .then((movies) => {
+        setMovies(movies);
+      });
   };
 
   const deleteMovie = (movie) =>
-    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+    fetch(`http://localhost:4000/rest/movies/${movie._id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
       .then((movies) => setMovies(movies));
   useEffect(
     () =>
-      fetch("http://localhost:4000/api/movies")
+      fetch("http://localhost:4000/rest/movies")
         .then((response) => response.json())
         .then((movies) => setMovies(movies)),
     []
