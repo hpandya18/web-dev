@@ -1,0 +1,3 @@
+{"_id":{"$oid":"619c161379770edbe082049c"},"title":"Terminator","rating":4.8}
+{"_id":{"$oid":"619c164479770edbe082049d"},"title":"Avatar","rating":4.7}
+{"_id":{"$oid":"619e3c06bb8bb4f0cab6baa7"},"title":"Inception","rating":2.5,"__v":0}

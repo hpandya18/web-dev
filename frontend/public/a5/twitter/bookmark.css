@@ -1,0 +1,100 @@
+.wd-bookmark-title{
+color: white;
+margin: 12px 0px  0px 16px;
+size: 20px;
+}
+
+body{
+    background-color: black;
+}
+
+.wd-user-handle{
+    size: 13px;
+    color: lightgray;
+    margin: 0px 0px 12px 16px;
+}
+
+.wd-border-div{
+    height: 1px;
+    background-color: lightgray;
+}
+
+.wd-owner-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-image-div{
+    margin: 12px 0px 0px 16px;
+}
+
+.wd-author-name{
+
+    size: 15px;
+    color: white;
+}
+
+.wd-author-handle{
+    color: lightgray;
+}
+
+.wd-post-title{
+    display: flex;
+}
+
+.wd-author-details{
+    margin: 12px 0px 0px 12px;
+}
+
+.wd-post-details{
+    width: 560px;
+    color: white;
+    size: 15px;
+}
+.wd-post{
+    margin: 0px 0px 12px 0px;
+}
+
+.wd-image-post{
+    height: 264px;
+    width: 504px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    margin-bottom: 12px;
+}
+
+.wd-image-title{
+    font-weight: bold;
+    color: white;
+
+}
+
+.wd-image-and-title-post{
+    size: 15px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.wd-post-text{
+    color: white
+}
+
+.wd-icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0px 0px 12px;
+}
+
+.fa, .fas{
+    color: white;
+}
+
+.fa-heart{
+    color: red;
+}
+
+i{
+    margin-right: 2px;
+}
