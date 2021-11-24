@@ -8,6 +8,7 @@ const MovieApiClient = () => {
   });
 
   const saveMovie = () => {
+    console.log(movie);
     fetch(`http://localhost:4000/api/movies/${movie._id}`, {
       method: "PUT",
       body: JSON.stringify(movie),

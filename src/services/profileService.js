@@ -1,5 +1,5 @@
-const PROFILE_API = "http://localhost:4000/api/profile";
-// const PROFILE_API = "https://twitter-clone-hp.herokuapp.com/api/profile";
+// const PROFILE_API = "http://localhost:4000/api/profile";
+const PROFILE_API = "https://twitter-clone-hp.herokuapp.com/api/profile";
 
 export const updateProfile = (dispatch, profile) => {
   fetch(`${PROFILE_API}`, {
@@ -24,7 +24,6 @@ export const getCurrentProfile = (dispatch) =>
   })
     .then((response) => response.json())
     .then((profile) => {
-      console.log("====", profile);
       dispatch({
         type: "fetch-profile",
         profile,

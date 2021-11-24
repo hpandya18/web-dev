@@ -1,5 +1,5 @@
-const WHO_API = "http://localhost:4000/api/who";
-// const TWEET_API = "https://twitter-clone-hp.herokuapp.com/api/tweets";
+// const WHO_API = "http://localhost:4000/api/who";
+const WHO_API = "https://twitter-clone-hp.herokuapp.com/api/tweets";
 
 export const fetchAllWhos = (dispatch) =>
   fetch(WHO_API)
