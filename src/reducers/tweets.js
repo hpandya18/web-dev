@@ -49,6 +49,7 @@ const tweets = (state = initialState, action) => {
           likes: 345,
         },
       };
+      console.log("=====", tweet);
       return {
         tweets: [tweet, ...state.tweets],
       };

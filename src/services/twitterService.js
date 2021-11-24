@@ -13,7 +13,7 @@ export const fetchAllTweets = (dispatch) =>
       })
     );
 
-export const postNewTweet = (dispatch, newTweet) =>
+export const postNewTweet = (dispatch, newTweet) => {
   fetch(TWEET_API, {
     method: "POST",
     body: JSON.stringify(newTweet),
@@ -25,9 +25,10 @@ export const postNewTweet = (dispatch, newTweet) =>
     .then((tweet) =>
       dispatch({
         type: "create-tweet",
-        tweet,
+        tweet: newTweet,
       })
     );
+};
 
 export const deleteTweet = (dispatch, tweet) =>
   fetch(`${TWEET_API}/${tweet._id}`, {
