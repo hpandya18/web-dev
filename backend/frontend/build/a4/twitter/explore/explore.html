@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./explore.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 col-xxl-2 col-xl-2 col-l-2 col-md-2">
+          <div class="list-group">
+            <a
+              href="https://en.wikipedia.org/wiki/Dune_(novel)"
+              class="list-group-item list-group-item-action"
+              aria-current="true"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Dune_(novel)"
+              class="list-group-item list-group-item-action"
+              aria-current="true"
+              ><i class="fas fa-home"></i>
+              <span class="list-group-item-text">Home</span>
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Dune_(novel)"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              ><i class="far fa-hashtag active"></i>
+              <span class="list-group-item-text">Explore</span>
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="far fa-bell"></i>
+              <span class="list-group-item-text">Notifications</span></a
+            >
+            <a
+              href="https://en.wikipedia.org/wiki/The_Forever_War"
+              class="list-group-item list-group-item-action"
+              ><i class="far fa-envelope"></i>
+              <span class="list-group-item-text">Messages</span></a
+            >
+            <a
+              href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+              class="list-group-item list-group-item-action"
+              ><i class="far fa-bookmark"></i>
+              <span class="list-group-item-text">Bookmarks</span></a
+            >
+
+            <a
+              href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+              class="list-group-item list-group-item-action"
+              ><i class="fas fa-list"></i>
+              <span class="list-group-item-text">List</span></a
+            >
+            <a
+              href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+              class="list-group-item list-group-item-action"
+              ><i class="far fa-user"></i>
+              <span class="list-group-item-text">Profile</span></a
+            >
+            <a
+              href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+              class="list-group-item list-group-item-action"
+              ><i class="fas fa-minus-circle"></i>
+              <span class="list-group-item-text">More</span></a
+            >
+          </div>
+          <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-primary" type="button">Tweet</button>
+          </div>
+          <!-- <button type="button" class="btn btn-primary w-100 mt-2">Tweet</button> -->
+        </div>
+        <div class="col-7 col-xxl-7 col-xl-7 col-l-7 col-md-6">
+          <form>
+            <div class="row">
+              <div class="search-bar p-0 mb-2">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="search"
+                    placeholder="&#128269;  Search Twitter"
+                  />
+                </div>
+                <div>
+                  <i class="fa fa-cog fa-2x"></i>
+                </div>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../entertainment.html"
+                    >Entertainment</a
+                  >
+                </li>
+              </ul>
+
+              <div class="rocket-card card">
+                <img class="rocket-image" src="../assets/rocket1.jpeg" alt="" />
+                <div class="image-content">SpaceX's Starship</div>
+              </div>
+              <div class="card card-post">
+                <div class="card-topic">Web Development</div>
+                <div class="card-title-name">
+                  <span class="card-topic-name">React JS</span>
+                  <i class="fa fa-check-circle mt-1"></i>
+                  <span class="dot-class">&#x2022;</span>
+                  2h
+                </div>
+                <div class="post-card-body">
+                  <p class="card-text">
+                    React.js is a component based frontend library that makes it
+                    very easy to build Single Page Applications or SPAs.
+                  </p>
+                  <img class="post-logo" src="../assets/react.png" alt="" />
+                </div>
+              </div>
+
+              <div class="card pt-1">
+                <div class="card-title-name">
+                  <span class="card-topic-name">Javascript</span>
+                  <i class="fa fa-check-circle mt-1"></i>
+                  <span class="dot-class">&#x2022;</span>
+                  2h
+                </div>
+                <div>
+                  <div class="post-card-body">
+                    <div>
+                      <div class="card-text">
+                        JavaScript is a programming language that can run on
+                        browsers as well as desktops.
+                      </div>
+                      <div class="number-of-tweets">123K Tweets</div>
+                    </div>
+                    <img
+                      class="post-logo"
+                      src="../assets/javascript.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-post">
+                <div class="card-topic">Web Development</div>
+
+                <div class="post-card-body">
+                  <div>
+                    <div class="card-title-name">
+                      <span class="card-topic-name">jQuery</span>
+                    </div>
+                    <div class="number-of-tweets">123K Tweets</div>
+                  </div>
+                  <img
+                    class="post-logo"
+                    src="../assets/jquery.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div class="card card-post">
+                <div class="card-topic">Web Development</div>
+
+                <div class="post-card-body">
+                  <div>
+                    <div class="card-title-name">
+                      <span class="card-topic-name">NodeJS</span>
+                      <i class="fa fa-check-circle mt-1"></i>
+                      <span class="dot-class">&#x2022;</span>2h
+                    </div>
+                    <div class="number-of-tweets">123K Tweets</div>
+                  </div>
+                  <img
+                    class="post-logo"
+                    src="../assets/node_js.jpeg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="col-3 col-xxl-3 col-xl-3 col-l-3 col-md-4 who-to-follow-list"
+        >
+          <div class="card">
+            <div class="follow-card-body">
+              <p class="follow-card-details">Who to follow</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-details">
+                <img
+                  class="follow-logo"
+                  src="../assets/java_logo.png"
+                  alt="logo"
+                  srcset=""
+                />
+                <div>
+                  <div class="card-text">Java</div>
+                  <div class="handle">@Java</div>
+                </div>
+                <i class="fa fa-check-circle mt-1"></i>
+              </div>
+              <div class="follow-button">
+                <button type="button" class="btn btn-sm btn-primary">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-details">
+                <img
+                  class="follow-logo"
+                  src="../assets/relativity_space.jpeg"
+                  alt="logo"
+                  srcset=""
+                />
+                <div>
+                  <div class="card-text">Relativity space</div>
+                  <div class="handle">@relativityspace</div>
+                </div>
+                <i class="fa fa-check-circle mt-1"></i>
+              </div>
+              <div class="follow-button">
+                <button type="button" class="btn btn-sm btn-primary">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-details">
+                <img
+                  class="follow-logo"
+                  src="../assets/virgin_galactic.png"
+                  alt="logo"
+                  srcset=""
+                />
+                <div>
+                  <div class="card-text">Virgin Galactic</div>
+                  <div class="handle">@virgingalactic</div>
+                </div>
+                <i class="fa fa-check-circle mt-1"></i>
+              </div>
+              <div class="follow-button">
+                <button type="button" class="btn btn-sm btn-primary">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-details">
+                <img
+                  class="follow-logo"
+                  src="../assets/nasa_logo.png"
+                  alt="logo"
+                  srcset=""
+                />
+                <div>
+                  <div class="card-text">NASA</div>
+                  <div class="handle">@NASA</div>
+                </div>
+                <i class="fa fa-check-circle mt-1"></i>
+              </div>
+              <div class="follow-button">
+                <button type="button" class="btn btn-sm btn-primary">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-details">
+                <img
+                  class="follow-logo"
+                  src="../assets/tesla_logo.jpeg"
+                  alt="logo"
+                  srcset=""
+                />
+                <div>
+                  <div class="card-text">Tesla</div>
+                  <div class="handle">@Tesla</div>
+                </div>
+                <i class="fa fa-check-circle mt-1"></i>
+              </div>
+              <div class="follow-button">
+                <button type="button" class="btn btn-sm btn-primary">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

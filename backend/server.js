@@ -1,9 +1,10 @@
 const express = require("express");
+const path = require("path");
 const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost:27017/webdev");
 
 const app = express();
-
+app.use(express.static(path.join(__dirname, "./frontend/build")));
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
