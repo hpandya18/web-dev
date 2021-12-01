@@ -33,7 +33,7 @@ const EditProfileComponent = () => {
         <div>
           <div className="edit-profile-title-div">
             <div className="cancel-button">
-              <Link to="/a8s/twitter/profile">
+              <Link to="/a8/twitter/profile">
                 <i className="fas fa-times"></i>
               </Link>
             </div>
