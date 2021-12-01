@@ -34,7 +34,6 @@ const tweets = (state = initialState, action) => {
       };
     case "create-tweet":
       const tweet = {
-        _id: new Date().getTime() + "",
         topic: "Web Development",
         userName: "ReactJS",
         verified: false,

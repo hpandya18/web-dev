@@ -1,5 +1,5 @@
-const TWEET_API = "http://localhost:4000/rest/tweets";
-// const TWEET_API = "https://git.heroku.com/web-dev-twitter-clone.git/rest/tweets";
+// const TWEET_API = "http://localhost:4000/rest/tweets";
+const TWEET_API = " https://web-dev-twitter-clone.herokuapp.com/rest/tweets";
 
 export const fetchAllTweets = (dispatch) =>
   fetch(TWEET_API)
@@ -25,7 +25,7 @@ export const postNewTweet = (dispatch, newTweet) => {
     .then((tweet) =>
       dispatch({
         type: "create-tweet",
-        tweet: newTweet,
+        tweet: tweet,
       })
     );
 };

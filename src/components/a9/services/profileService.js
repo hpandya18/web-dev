@@ -1,6 +1,6 @@
 const PROFILE_API = "http://localhost:4000/api/profile";
 // const PROFILE_API =
-//   "https://git.heroku.com/web-dev-twitter-clone.git/api/profile";
+//   "https://web-dev-twitter-clone.herokuapp.com/api/profile";
 
 export const updateProfile = (dispatch, profile) => {
   console.log("=======", profile);
