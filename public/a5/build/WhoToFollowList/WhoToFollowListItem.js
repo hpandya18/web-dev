@@ -11,7 +11,7 @@ const WhoToFollowListItem = (who) => {
         />
         <div>
           <div class="card-text">${who.userName}</div>
-          <div class="handle">${who.handle}</div>
+          <div class="handle">@${who.handle}</div>
         </div>
         <i class="fa fa-check-circle mt-1"></i>
       </div>
