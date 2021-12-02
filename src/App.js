@@ -73,10 +73,10 @@ function App() {
             <Link to="/a8/twitter/home">Assignment - 8</Link>
           </li>
           <li>
-            <Link to="/a4/practise/index.html">Practice - 4</Link>
+            <a href="./a4/practise/index.html">Practice - 4</a>
           </li>
           <li>
-            <Link to="/a5/practise/js/index.html">Practice - 5</Link>
+            <a href="./a5/practise/js/index.html">Practice - 5</a>
           </li>
           <li>
             <Link to="/a6/practice">Practice - 6</Link>
